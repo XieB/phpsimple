@@ -1,2 +1,2 @@
 <?php
-require(ROOT_PATH.'/core/common.php');
+require('core/common.php');
