@@ -14,8 +14,7 @@ class Db
 		$rhis->con = @mysql_connect(C('DB_ADDR'),C('DB_USER'),C('DB_PASS')) or die('无法连接数据库');
 		mysql_select_db(C('DB_NAME'),$con);
 		mysql_set_charset('utf8');
-		$this->table = $a;
-		return $this;
+		$this->table = $a;	
 	}
 	
 	public function where($a){
