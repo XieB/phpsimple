@@ -7,8 +7,8 @@ class Template
 	protected $tpl;
 	function __construct(){
 		$this->tpl = new Smarty();
-		$this->tpl->templates = ROOT_PATH.'/view';
-		$this->tpl->templates_c = ROOT_PATH.'/view/Runtime';
+		$this->tpl->template_dir = ROOT_PATH.'/view';
+		$this->tpl->compile_dir = ROOT_PATH.'/view/Runtime';
 		$this->tpl->caching = false;
 		$this->tpl->left_delimiter = C('T_PREFIX');
 		$this->tpl->right_delimiter = C('T_SUFFIX');

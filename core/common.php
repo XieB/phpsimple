@@ -4,6 +4,7 @@ require(ROOT_PATH.'/core/functions.php');
 require(ROOT_PATH.'/core/extend/Smarty/Smarty.class.php');
 require(ROOT_PATH.'/core/lib/Template.class.php');
 // require(ROOT_PATH.'/core/lib/Db.class.php');
+spl_autoload_register('xxautoload');
 $url = URL_PATH();
 $url_length = count($url);
 if ($url_length == '0') {
