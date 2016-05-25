@@ -15,12 +15,8 @@ function URL_PATH(){
 }
 
 function xxautoload($classname){
-	$classpath = ROOT_PATH.'\/controller\/'.$classname.'.class.php';
-	$modelpath = ROOT_PATH.'\/model\/'.$classname.'.model.php';
-	// var_dump($classpath);
-	// echo '<hr />';
-	// var_dump($modelpath);
-	// exit;
+	$classpath = ROOT_PATH.'/controller/'.$classname.'.class.php';
+	$modelpath = ROOT_PATH.'/model/'.$classname.'.model.php';
 	if (file_exists($classpath)) {
 		require_once($classpath);
 	}elseif (file_exists($modelpath)) {
@@ -35,6 +31,6 @@ function init($controller = 'index',$method = 'index'){
 	$con = strtolower($controller);
 	$method = strtolower($method);
 	$con = ucwords($con);
-	$xx = new $con.'()';
-	$xx->$method.'()';
+	$init = new $con.'()';
+	$init->$method.'()';
 }

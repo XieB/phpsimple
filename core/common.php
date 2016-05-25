@@ -8,7 +8,7 @@ spl_autoload_register('xxautoload');
 $url = URL_PATH();
 $url_length = count($url);
 if ($url_length == '0') {
-	init('index');
+	init();
 }elseif($url_length == '1'){
 	init($url[0]);
 }elseif ($url_length == '2') {
