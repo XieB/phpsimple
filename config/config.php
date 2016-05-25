@@ -5,6 +5,6 @@ return array(
 	'DB_USER'	=>	'root',
 	'DB_PASS'	=>	'root',
 	'TEMPLATE_SUFFIX'	=>	'.html',
-	'DEFAULT_THEME'		=>	'Home',
-	'ADMIN_THEME'		=>	'Admin',
+	'T_SUFFIX'	=>	'}#',
+	'T_PREFIX'	=>	'#{',
 );
