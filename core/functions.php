@@ -31,8 +31,8 @@ function init($controller = 'index',$method = 'index'){
 	$con = strtolower($controller);
 	$method = strtolower($method);
 	$con = ucwords($con);
-	$init = new $con.'()';
-	$init->$method.'()';
+	$init = new $con();
+	$init->$method();
 }
 
 function M($a){

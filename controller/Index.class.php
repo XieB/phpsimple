@@ -9,7 +9,7 @@ class Index extends Template
 		parent::__construct();
 	}
 	public function index(){
-		echo 'i am index method1';
-		exit;
+		$this->assign('xx','xiexie');
+		$this->display('index');
 	}
 }

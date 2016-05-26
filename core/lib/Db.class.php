@@ -34,7 +34,7 @@ class Db
 	}
 
 	public function select(){
-		$sql = "SELECT ".{$this->sql['field']}." FROM ".$this->sql['table']." ".$this->sql['where']." ".$this->sql['order']." ".$this->sql['limit']." ".$this->sql['group']." ".$this->sql['having'];
+		$sql = "SELECT ".$this->sql['field']." FROM ".$this->sql['table']." ".$this->sql['where']." ".$this->sql['order']." ".$this->sql['limit']." ".$this->sql['group']." ".$this->sql['having'];
 		return $this->mysql_q($sql);
 	}
 
