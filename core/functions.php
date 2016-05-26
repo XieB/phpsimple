@@ -33,8 +33,11 @@ function init($controller = 'index',$method = 'index'){
 	$con = ucwords($con);
 	$init = new $con.'()';
 	$init->$method.'()';
+<<<<<<< HEAD
 }
 
 function M($a){
 	return new Db($a);
+=======
+>>>>>>> a87288146e8cc7f7edf4b98592696c2fae3495c9
 }
