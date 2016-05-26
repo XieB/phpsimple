@@ -10,10 +10,10 @@ class Template
 		$this->tpl->template_dir = ROOT_PATH.'/view';
 		$this->tpl->compile_dir = ROOT_PATH.'/config/Runtime';
 		$this->tpl->caching = false;
-		$t_prefix = C('T_SUFFIX');
-		$t_suffix = C('T_PREFIX');
-		!empty($t_prefix)?$this->tpl->left_delimiter = $t_prefix:'';
-		!empty($t_prefix)?$this->tpl->right_delimiter = $t_prefix:'';
+		$t_prefix = C('T_PREFIX');
+		$t_suffix = C('T_SUFFIX');
+		$this->tpl->left_delimiter = !empty($t_prefix)?$t_prefix:'';
+		$this->tpl->right_delimiter = !empty($t_prefix)?$t_suffix:'';
 	}
 	public function assign($a,$b){
 		$this->tpl->assign($a,$b);

@@ -5,6 +5,6 @@ return array(
 	'DB_USER'	=>	'root',
 	'DB_PASS'	=>	'root',
 	'TEMPLATE_SUFFIX'	=>	'.html',
-	'T_SUFFIX'	=>	'}#',
 	'T_PREFIX'	=>	'#{',
+	'T_SUFFIX'	=>	'}#',
 );
