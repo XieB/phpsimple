@@ -13,7 +13,6 @@ class IndexAction extends Template
 		$this->display('index');
 	}
 	public function test(){
-		$tmp = D('index');
-		$tmp->test();
+		D('index')->test();
 	}
 }
