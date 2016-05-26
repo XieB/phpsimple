@@ -2,7 +2,7 @@
 /**
 * 
 */
-class IndexAction extends Template
+class IndexAction extends CommonAction
 {
 	function __construct()
 	{
