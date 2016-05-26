@@ -12,4 +12,7 @@ class Index extends Template
 		$this->assign('xx','xiexie');
 		$this->display('index');
 	}
+	public function test(){
+		echo 'i am test method';
+	}
 }
