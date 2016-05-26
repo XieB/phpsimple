@@ -2,7 +2,7 @@
 /**
 * 
 */
-class Index extends Template
+class IndexAction extends Template
 {
 	function __construct()
 	{
@@ -13,6 +13,7 @@ class Index extends Template
 		$this->display('index');
 	}
 	public function test(){
-		echo 'i am test method';
+		$tmp = D('index');
+		$tmp->test();
 	}
 }

@@ -15,8 +15,8 @@ function URL_PATH(){
 }
 
 function xxautoload($classname){
-	$classpath = ROOT_PATH.'/controller/'.$classname.'.class.php';
-	$modelpath = ROOT_PATH.'/model/'.$classname.'.model.php';
+	$classpath = ROOT_PATH.'/controller/'.$classname.'.php';
+	$modelpath = ROOT_PATH.'/model/'.$classname.'.php';
 	if (file_exists($classpath)) {
 		require_once($classpath);
 	}elseif (file_exists($modelpath)) {
@@ -31,10 +31,17 @@ function init($controller = 'index',$method = 'index'){
 	$con = strtolower($controller);
 	$method = strtolower($method);
 	$con = ucwords($con);
+	$con = $con.'Action';
 	$init = new $con();
 	$init->$method();
 }
 
 function M($a){
 	return new Db($a);
+}
+function D($a){
+	$m = strtolower($a);
+	$m = ucwords($m);
+	$m = $m.'Model';
+	return new $m;
 }
