@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0;border:0;font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
+html body{width: 100%;background-color: #f0f0f0;};
+.topba{width: 100%;height: 3.2rem;background-color: #0180cf;}
+.topcenter{width: 80%;margin: 0 auto;text-align: center;line-height: 3.2rem;}
+.topcenter span{color: #fff;font-size: 1.2rem;}
+.search{width: 88%;height: 3.2rem;margin: 0 auto;}
+.search input{height: 2rem;width: 100%;border-radius: 1.2rem;margin-top: 0.6rem;outline:none;text-indent: 1.8rem;background: url(../image/search.png) no-repeat #fff;background-position:0.5rem center;}
+.lunbo{width: 100%;height: 10rem;background: #aaa;}
